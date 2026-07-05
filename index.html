@@ -1,225 +1,177 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Amir | Front-End Dev</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-     <div id="progressBar"></div>
-    <header id="header">
-        <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amir | Front-End Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<!----- header ----->
+  <header id="header">
+    <div class="logo">Amir<span>.codding</span></div>
+    <nav class="nav">
+      <a href="#hero">خانه</a>
+      <a href="#about">درباره من</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <a href="assets/resume/Black and White Simple Creative Graphic Designer Resume.pdf" target="_blank" class="btn btn-ghost btn-resume-header">مشاهده رزومه</a>
+    <button class="nav-toggle" id="navToggle" aria-label="منو">☰</button>
+  </header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#">خانه</a>
-  <a href="#about">درباره من</a>
-  <a href="#skills">مهارت‌ها</a>
-  <a href="#contact">تماس</a>
+  <div class="overlay" id="overlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#hero">خانه</a>
+    <a href="#about">درباره من</a>
+    <a href="#skills">مهارت‌ها</a>
+    <a href="#contact">تماس</a>
+    <a href="assets/resume/Black and White Simple Creative Graphic Designer Resume.pdf" target="_blank">مشاهده رزومه</a>
+  </nav>
+<!----- hero ----->
+  <section id="hero">
+    <div class="hero-text reveal">
+      <div class="role-tag">FRONT-END DEVELOPER — <span class="ltr">REV. 2026</span></div>
+      <h1>ساخت رابط‌هایی<br>که <span class="u">دقیق</span> کار می‌کنن</h1>
+      <p>من امیرحسین رسولی هستم؛ به وب مثل یه نقشه فنی نگاه می‌کنم — هر لایه، هر فاصله، هر پیکسل باید دلیل داشته باشه. تمرکزم روی ساخت رابط‌های کاربری مدرن، سریع و کاربرپسنده.</p>
+      <div class="hero-actions">
+        <a href="tel:+989371564956" class="btn btn-solid">تماس با من</a>
+        <a href="assets/resume/resume.pdf" download="rasouli-resume" target="_blank" class="btn btn-ghost">مشاهده رزومه</a>
+      </div>
+    </div>
+<div class="exploded reveal">
+  <div class="connector" style="width:120px; top:60px; right:200px;"></div>
+  <div class="connector" style="width:150px; top:180px; right:230px;"></div>
+
+  <div class="layer l1">
+    <div class="tag">01 / HTML — ساختار</div>
+    <ul class="layer-list">
+      <li>تگ‌های Semantic</li>
+      <li>ساختار قابل دسترس</li>
+    </ul>
+  </div>
+
+  <div class="layer l2">
+    <div class="tag">02 / CSS — طراحی</div>
+    <ul class="layer-list">
+      <li>Flexbox / Grid</li>
+      <li>ریسپانسیو کامل</li>
+      <li>انیمیشن‌های ظریف</li>
+    </ul>
+  </div>
+
+  <div class="layer l3">
+    <div class="tag">03 / JS — رفتار</div>
+    <ul class="layer-list">
+      <li>تعامل و رویدادها</li>
+    </ul>
+  </div>
 </div>
-<div class="overlay" id="overlay"></div>
-      <nav class="nav">
-        <a href="#">خانه</a>
-        <a href="#about">درباره من</a>
-        <a href="#skills">مهارت‌ها</a>
-        <a href="#contact">تماس</a>
-      </nav>
-      <div class="header-title">
-         <p class="logo-header">Amir<span class="logo-n">.codding</span></p>
-      </div>
-    </header>
-    <section id="hero">
-      <div class="hero-content">
-        <h2><span>سلام!</span> من امیرحسین رسولی هستم</h2>
-        <h1 id="typing"></h1>
-        <p>ساخت رابط‌های کاربری مدرن و سریع</p>
-        <div class="hero-buttons">
-          <a href="tel:+989371564956" class="btn-contact">تماس بامن</a>
-          <a href="assets/resume/resume.pdf"download="amir-hossein-rsouli-resume.pdf" target="_blank" class="btn-resume">رزومه من</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img
-          src="assets/images/IMG-ME.jpg"
-          alt="Amir Hossein Rasouli"/>
-        <div class="hero-bg"></div>
-      </div>
-    </section>
-    <!-----------About-me---------- -->
-    <section id="about" class="about ">
-      <div class="about-box">
-        <h2>درباره من</h2>
-        <div class="border-title"></div>
-        <p class="p">
-          من امیرحسین رسولی هستم؛ توسعه‌دهنده فرانت‌اند و علاقه‌مند به ساخت
-          رابط‌های کاربری مدرن، سریع و کاربرپسند. تمرکز من روی تبدیل ایده‌ها به
-          وب‌سایت‌هایی است که علاوه بر ظاهر زیبا، تجربه کاربری روان و عملکرد
-          مناسبی داشته باشند. بیشتر با HTML، CSS و JavaScript کار می‌کنم و در
-          کنار یادگیری مداوم، سعی می‌کنم استانداردهای طراحی، ریسپانسیو بودن،
-          بهینه‌سازی و کیفیت کد را در پروژه‌هایم رعایت کنم. باور دارم یک وب‌سایت
-          خوب فقط ظاهر جذاب ندارد؛ بلکه باید سریع، قابل استفاده و قابل توسعه
-          باشد. به همین دلیل همیشه تلاش می‌کنم علاوه بر نوشتن کد، به جزئیات
-          طراحی، تجربه کاربری و عملکرد پروژه نیز توجه ویژه‌ای داشته باشم. در حال
-          حاضر مسیر یادگیری خود را با هدف تبدیل شدن به یک توسعه‌دهنده فرانت‌اند
-          حرفه‌ای ادامه می‌دهم و از همکاری در پروژه‌های واقعی و چالش‌برانگیز
-          استقبال می‌کنم.
-        </p>
-      </div>
-    </section>
-    <!-----------------projecs------------>
-    <!-- <section id="expanding-projects">
-     <h2>نمونه کارهای <span class="blue">.</span> من</h2>
-    <div class="expanding-container">
-    <div class="panel active" style="background-image:url('https:')">
-      <div class="panel-content">
-        <h3>پروژه اول</h3>
-        <p>عنوان پروژه</p>
-        <a href="#" class="project-btn">مشاهده پروژه</a>
-      </div>
-    </div>
-    <div class="panel" style="background-image:url()">
-      <div class="panel-content">
-        <h3>پروژه دوم</h3>
-        <p>عنوان پروژه</p>
-        <a href="#" class="project-btn">مشاهده پروژه</a>
-      </div>
-    </div>
-    <div class="panel" style="background-image:url()">
-      <div class="panel-content">
-        <h3>پروژه سوم</h3>
-        <p>عنوان پروژه</p>
-        <a href="#" class="project-btn">مشاهده پروژه</a>
-      </div>
-    </div>
-    <div class="panel" style="background-image:url()">
-      <div class="panel-content">
-        <h3>پروژه چهارم</h3>
-        <p>عنوان پروژه</p>
-        <a href="#" class="project-btn">مشاهده پروژه</a>
-      </div>
-    </div>
-  </div>
-</section> -->
-    <!---------- skills ------------>
-    <section id="skills" class="skills reveal">
-      <div class="skills-box">
-        <h2>مهارتها</h2>
-        <div class="border-title-2"></div>
-        <div class="skill">
-          <div class="skill-top">
-            <span>HTML</span>
-            <span>90%</span>
-          </div>
-          <div class="battery">
-            <div class="level html" data-percent="90"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-top">
-            <span>CSS</span>
-            <span>90%</span>
-          </div>
-          <div class="battery">
-            <div class="level css" data-percent="90"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-top">
-            <span>JavaScript</span>
-            <span>40%</span>
-          </div>
-          <div class="battery">
-            <div class="level js" data-percent="40"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-top">
-            <span>WordPress</span>
-            <span>50%</span>
-          </div>
-          <div class="battery">
-            <div class="level wp" data-percent="50"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-<!----------- social-links ------>
-<section class="contact " id="contact">
-  <div class="contact-container">
-    <div class="contact-info">
-      <h2>ارتباط با من</h2>
-      <div class="border-title-3"></div>
+  </section>
+<!----- about ----->
+  <section id="about">
+    <div class="reveal">
+      <div class="fig-label">FIG. 01</div>
+      <h2>درباره من</h2>
       <p>
-     اگر برای همکاری یا انجام پروژه سوالی دارید،
-        خوشحال می‌شوم پیام شما را دریافت کنم.
+        من امیرحسین رسولی هستم؛ توسعه‌دهنده فرانت‌اند و علاقه‌مند به ساخت رابط‌های کاربری مدرن، سریع و
+        کاربرپسند. تمرکز من روی تبدیل ایده‌ها به وب‌سایت‌هایی است که علاوه بر ظاهر زیبا، تجربه کاربری روان
+        و عملکرد مناسبی داشته باشند. بیشتر با HTML، CSS و JavaScript کار می‌کنم و در کنار یادگیری مداوم، سعی
+        می‌کنم استانداردهای طراحی، ریسپانسیو بودن، بهینه‌سازی و کیفیت کد را در پروژه‌هایم رعایت کنم. باور
+        دارم یک وب‌سایت خوب فقط ظاهر جذاب ندارد؛ بلکه باید سریع، قابل استفاده و قابل توسعه باشد.
       </p>
-      <div class="contact-socials">
-        <a href="https://github.com/amir-codding" >
-          <img src="./assets/svg/github-brands-solid-full (1).svg" alt="گیت هاب"></a>
-        <a href="https://instagram.com/amir.codding">
-         <img src="./assets/svg/instagram-brands-solid-full.svg" alt="اینیستا">
-        </a>
-        <a href="mailto:rasouiamirhossein.frontend@gmail.com">
-          <img src="./assets/svg/envelope-solid-full.svg" alt="ایمیل">
-        </a>
-        <a href="https://t.me/amir2026tools">
-          <img src="./assets/svg/telegram-brands-solid-full.svg" alt="تلگرام">
-        </a>
+    </div>
+    <div class="reveal">
+      <div class="photo-plate">
+        <img src="assets/images/img-me.jpg" alt="Amir Hossein Rasouli">
+        <span class="photo-tag">FIG. 01A — PORTRAIT</span>
+      </div>
+      <div class="spec-list">
+        <div class="spec-row"><span>موقعیت</span><span class="ltr">IRAN</span></div>
+        <div class="spec-row"><span>تخصص</span><span>HTML / CSS / JS</span></div>
+        <div class="spec-row"><span>در حال یادگیری</span><span class="ltr">JavaScript</span></div>
+        <div class="spec-row"><span>وضعیت</span><span>در دسترس برای همکاری</span></div>
       </div>
     </div>
-    <form class="contact-form" id="contactForm">
-      <input
-        type="text"
-        name="name"
-        placeholder="نام شما"
-        required>
-      <input
-        type="email"
-        name="email"
-        placeholder="ایمیل شما"
-        required>
-      <textarea
-        name="message"
-        rows="6"
-        placeholder="پیام خود را بنویسید..."
-        required></textarea>
-      <button type="submit">
-        ارسال پیام
-      </button>
+  </section>
+<!----- skills ----->
+  <section id="skills">
+    <div class="fig-label reveal">FIG. 02 — SKILL MEASUREMENTS</div>
+    <div class="reveal" style="margin-top:36px;">
+      <div class="ruler-item">
+        <div class="ruler-top"><span class="name">HTML</span><span class="pct ltr">90%</span></div>
+        <div class="ruler"><div class="track"></div><div class="ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="marker" style="right:90%;"></div></div>
+      </div>
+      <div class="ruler-item">
+        <div class="ruler-top"><span class="name">CSS</span><span class="pct ltr">90%</span></div>
+        <div class="ruler"><div class="track"></div><div class="ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="marker" style="right:90%;"></div></div>
+      </div>
+      <div class="ruler-item">
+        <div class="ruler-top"><span class="name">JavaScript</span><span class="pct ltr">40%</span></div>
+        <div class="ruler"><div class="track"></div><div class="ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="marker" style="right:40%;"></div></div>
+      </div>
+      <div class="ruler-item">
+        <div class="ruler-top"><span class="name">WordPress</span><span class="pct ltr">50%</span></div>
+        <div class="ruler"><div class="track"></div><div class="ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="marker" style="right:50%;"></div></div>
+      </div>
+    </div>
+  </section>
+<!----- work ----->
+  <section id="work">
+    <div class="fig-label reveal">FIG. 03 — SELECTED SPECIMENS</div>
+    <div class="work-grid reveal">
+      <div class="specimen">
+        <div><div class="num ltr">SPECIMEN — 01</div><h3>لندینگ‌پیج محصول</h3><p>یه پروژه واقعی رو اینجا جایگزین کن: اسکرین‌شات، لینک دمو و لینک گیت‌هاب.</p></div>
+        <div class="placeholder-note">⤷ جای پروژه واقعی توئه</div>
+      </div>
+      <div class="specimen">
+        <div><div class="num ltr">SPECIMEN — 02</div><h3>داشبورد تعاملی</h3><p>یه پروژه واقعی رو اینجا جایگزین کن: اسکرین‌شات، لینک دمو و لینک گیت‌هاب.</p></div>
+        <div class="placeholder-note">⤷ جای پروژه واقعی توئه</div>
+      </div>
+      <div class="specimen">
+        <div><div class="num ltr">SPECIMEN — 03</div><h3>کلون یه اپ معروف</h3><p>یه پروژه واقعی رو اینجا جایگزین کن: اسکرین‌شات، لینک دمو و لینک گیت‌هاب.</p></div>
+        <div class="placeholder-note">⤷ جای پروژه واقعی توئه</div>
+      </div>
+    </div>
+  </section>
+<!----- writing ----->
+  <section id="writing">
+    <div class="fig-label reveal">FIG. 03B — WRITING</div>
+    <div class="writing-row reveal">
+      <a href="./pages/blog.html"><span class="ltr">→</span>وبلاگ</a>
+      <a href="./pages/posts.html"><span class="ltr">→</span>پست‌ها</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="order-box reveal">
+      <div class="fig-label" style="margin-bottom:20px;">FIG. 04</div>
+      <div class="row"><span>ایمیل</span><a class="ltr" href="mailto:rasouiamirhossein.frontend@gmail.com">rasouiamirhossein.frontend@gmail.com</a></div>
+      <div class="row"><span>تلگرام</span><a class="ltr" href="https://t.me/amir2026tools">@amir2026tools</a></div>
+      <div class="row"><span>گیت‌هاب</span><a class="ltr" href="https://github.com/amir-codding">amir-codding</a></div>
+      <div class="row"><span>اینستاگرام</span><a class="ltr" href="https://instagram.com/amir.codding">amir.codding</a></div>
+      <div class="row"><span>بله</span><a class="ltr" href="https://ble.ir/iamamirmahraz">iamamirmahraz</a></div>
+    </div>
+    <form class="reveal" id="contactForm">
+      <input type="text" name="name" id="inputName" placeholder="نام شما" required>
+      <input type="email" name="email" id="inputEmail" placeholder="ایمیل شما" required>
+      <textarea name="message" id="inputMessage" rows="5" placeholder="درباره پروژه‌تبگو..." required></textarea>
+      <button type="submit" id="submitBtn">ارسال درخواست</button>
     </form>
-  </div>
-</section>
-    <!------------blog ------------->
-    <section class="blog">
-      <div class="blog-box">
-        <a href="./pages/blog.html">وبلاگ</a>
-        <a href="./pages/blog.html">←</a>
-      </div>
-    </section>
-    <!----------- posts ------------>
-    <section class="posts">
-      <div class="posts-box">
-        <a href="./pages/posts.html"> پست </a>
-        <a href="./pages/posts.html">←</a>
-      </div>
-    </section>
-    <!---------------footer-------------->
-    <section id="cta">
-      <div class="cta-content">
-        <h2>آماده‌اید پروژه‌ای را شروع کنیم؟</h2>
-        <p>با من تماس بگیرید تا بهترین ایده‌ها را به واقعیت تبدیل کنیم.</p>
-        <a href="#contact" class="btn-cta">تماس با من</a>
-      </div>
-    </section>
-    <!-- Footer -->
-    <div class="footer-copy">
-      <span> Designed & Developed by Amir Hossein Rasouli </span>
+  </section>
+
+  <footer>
+    <div class="title-block">
+      <div><div class="k">NAME</div><div class="v">Amirhossein Rasouli</div></div>
+      <div><div class="k">ROLE</div><div class="v">Front-End Developer</div></div>
+      <div><div class="k">REV</div><div class="v">2026.07</div></div>
+      <div><div class="k">STATUS</div><div class="v">Available</div></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 </html>
