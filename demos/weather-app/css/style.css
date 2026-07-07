@@ -1,0 +1,88 @@
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+  font-family:'Vazirmatn', sans-serif;
+  min-height:100vh;
+  background: linear-gradient(160deg, #4A90D9 0%, #7FB8E8 45%, #C7E3F5 100%);
+  display:flex; align-items:center; justify-content:center;
+  padding: 30px 16px;
+}
+
+.app{
+  width:100%; max-width:460px;
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 24px;
+  padding: 32px 26px;
+  box-shadow: 0 30px 60px -20px rgba(20,50,90,0.35);
+  color:#0F2942;
+}
+
+.app h1{
+  font-size:1.5rem; text-align:center; margin-bottom:6px;
+}
+.subtitle{
+  text-align:center; font-size:0.85rem; color:#2B4A66; margin-bottom:24px;
+}
+
+.search-box{
+  display:flex; gap:10px; margin-bottom:18px;
+}
+.search-box input{
+  flex:1; padding:12px 14px; border-radius:12px; border:none;
+  background: rgba(255,255,255,0.6); font-family:inherit; font-size:0.95rem; outline:none;
+}
+.search-box input:focus{ background: rgba(255,255,255,0.85); }
+.search-box button{
+  padding:12px 20px; border-radius:12px; border:none; cursor:pointer;
+  background:#0F2942; color:#fff; font-family:inherit; font-size:0.9rem; transition:.2s;
+}
+.search-box button:hover{ background:#193a5c; }
+
+.status{
+  text-align:center; font-size:0.9rem; min-height:20px; margin-bottom:10px;
+}
+.status.error{ color:#B3261E; }
+
+.hidden{ display:none; }
+
+.current{
+  display:flex; align-items:center; gap:18px;
+  background: rgba(255,255,255,0.35); border-radius:18px; padding:20px;
+  margin-bottom:18px;
+}
+.current-icon{ font-size:3.2rem; line-height:1; }
+.current-info h2{ font-size:1.2rem; margin-bottom:4px; }
+.current-temp{ font-size:2rem; font-weight:700; }
+.current-desc{ font-size:0.9rem; color:#2B4A66; }
+
+.extra-info{
+  display:flex; gap:12px; margin-bottom:22px;
+}
+.extra-item{
+  flex:1; background: rgba(255,255,255,0.3); border-radius:14px; padding:14px;
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+}
+.extra-label{ font-size:0.75rem; color:#2B4A66; }
+.extra-value{ font-size:1.1rem; font-weight:600; }
+
+.forecast-title{ font-size:1rem; margin-bottom:12px; }
+.forecast{
+  display:grid; grid-template-columns: repeat(5, 1fr); gap:8px;
+}
+.forecast-day{
+  background: rgba(255,255,255,0.3); border-radius:12px; padding:10px 4px;
+  text-align:center; font-size:0.75rem;
+}
+.forecast-day .fd-name{ margin-bottom:6px; color:#2B4A66; }
+.forecast-day .fd-icon{ font-size:1.4rem; margin-bottom:6px; }
+.forecast-day .fd-temp{ font-weight:600; }
+.forecast-day .fd-temp .low{ color:#3B5A78; font-weight:400; }
+
+@media (max-width:420px){
+  .forecast{ grid-template-columns: repeat(5, 1fr); gap:5px; }
+  .forecast-day{ font-size:0.65rem; padding:8px 2px; }
+  .current-icon{ font-size:2.4rem; }
+  .current-temp{ font-size:1.6rem; }
+}

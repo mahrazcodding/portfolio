@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>پیش‌بینی آب‌وهوا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/weather-app/css/style.css"/>
+</head>
+<body>
+
+  <div class="app">
+    <h1>پیش‌بینی آب‌وهوا</h1>
+    <p class="subtitle">اسم یه شهر رو بنویس تا وضعیت هواش رو ببینی</p>
+
+    <form id="searchForm" class="search-box">
+      <input type="text" id="cityInput" placeholder="مثلاً: تهران، مشهد،گیلان" required>
+      <button type="submit">جستجو</button>
+    </form>
+
+    <div id="status" class="status"></div>
+
+    <div id="result" class="result hidden">
+      <div class="current">
+        <div class="current-icon" id="currentIcon">☀️</div>
+        <div class="current-info">
+          <h2 id="cityName">—</h2>
+          <div class="current-temp"><span id="currentTemp">--</span>°C</div>
+          <div class="current-desc" id="currentDesc">—</div>
+        </div>
+      </div>
+
+      <div class="extra-info">
+        <div class="extra-item">
+          <span class="extra-label">رطوبت</span>
+          <span class="extra-value"><span id="humidity">--</span>%</span>
+        </div>
+        <div class="extra-item">
+          <span class="extra-label">سرعت باد</span>
+          <span class="extra-value"><span id="wind">--</span> km/h</span>
+        </div>
+      </div>
+
+      <h3 class="forecast-title">۵ روز آینده</h3>
+      <div class="forecast" id="forecast"></div>
+    </div>
+  </div>
+
+  <script src="./weather-app/js/main.js"></script>
+</body>
+</html>
