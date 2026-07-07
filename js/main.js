@@ -60,3 +60,28 @@ document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
       });
   });
 })();
+// ----------افکت تایپ زنده
+const codeLines = [
+  `<span class="c-kw">const</span> developer = {`,
+  `&nbsp;&nbsp;name: <span class="c-str">'Amirhossein Rasouli'</span>,`,
+  `&nbsp;&nbsp;role: <span class="c-str">'Front-End Developer'</span>,`,
+  `&nbsp;&nbsp;stack: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>, <span class="c-str">'JS'</span>],`,
+  `&nbsp;&nbsp;approach: <span class="c-str">'pixel-perfect, fast'</span>,`,
+  `&nbsp;&nbsp;available: <span class="c-kw">true</span>`,
+  `};`,
+];
+
+function typeCode() {
+  const el = document.getElementById('typedCode');
+  if (!el) return;
+  let i = 0;
+  function nextLine() {
+    if (i < codeLines.length) {
+      el.innerHTML += (i > 0 ? '\n' : '') + codeLines[i];
+      i++;
+      setTimeout(nextLine, 260);
+    }
+  }
+  nextLine();
+}
+typeCode();

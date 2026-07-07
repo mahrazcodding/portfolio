@@ -19,7 +19,7 @@
       <a href="#contact">تماس</a>
     </nav>
     <a href="assets/resume/Black and White Simple Creative Graphic Designer Resume.pdf" target="_blank" class="btn btn-ghost btn-resume-header">مشاهده رزومه</a>
-    <button class="nav-toggle" id="navToggle" aria-label="منو">☰</button>
+    <img src="./assets/svg/apps.svg" class="nav-toggle" id="navToggle" alt="منو"></img>
   </header>
 
   <div class="overlay" id="overlay"></div>
@@ -41,34 +41,15 @@
         <a href="assets/resume/resume.pdf" download="rasouli-resume" target="_blank" class="btn btn-ghost">مشاهده رزومه</a>
       </div>
     </div>
-<div class="exploded reveal">
-  <div class="connector" style="width:120px; top:60px; right:200px;"></div>
-  <div class="connector" style="width:150px; top:180px; right:230px;"></div>
-
-  <div class="layer l1">
-    <div class="tag">01 / HTML — ساختار</div>
-    <ul class="layer-list">
-      <li>تگ‌های Semantic</li>
-      <li>ساختار قابل دسترس</li>
-    </ul>
-  </div>
-
-  <div class="layer l2">
-    <div class="tag">02 / CSS — طراحی</div>
-    <ul class="layer-list">
-      <li>Flexbox / Grid</li>
-      <li>ریسپانسیو کامل</li>
-      <li>انیمیشن‌های ظریف</li>
-    </ul>
-  </div>
-
-  <div class="layer l3">
-    <div class="tag">03 / JS — رفتار</div>
-    <ul class="layer-list">
-      <li>تعامل و رویدادها</li>
-    </ul>
-  </div>
-</div>
+<div class="code-window reveal">
+      <div class="cw-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="cw-title ltr">amir.dev</span>
+      </div>
+      <div class="cw-body">
+        <pre class="ltr"><code id="typedCode"></code><span class="cw-cursor">▍</span></pre>
+      </div>
+    </div>
   </section>
 <!----- about ----->
   <section id="about">
@@ -123,16 +104,16 @@
     <div class="fig-label reveal">FIG. 03 — SELECTED SPECIMENS</div>
     <div class="work-grid reveal">
       <div class="specimen">
-        <div><div class="num ltr">SPECIMEN — 01</div><h3>لندینگ‌پیج محصول</h3><p>یه پروژه واقعی رو اینجا جایگزین کن: اسکرین‌شات، لینک دمو و لینک گیت‌هاب.</p></div>
-        <div class="placeholder-note">⤷ جای پروژه واقعی توئه</div>
+        <div><div class="num ltr">SPECIMEN — 01</div><h3>عنوان پروژه</h3><p>توضیحات درباره پروژه</p></div>
+        <div class="placeholder-note">→ جای پروژه واقعی توئه</div>
       </div>
       <div class="specimen">
-        <div><div class="num ltr">SPECIMEN — 02</div><h3>داشبورد تعاملی</h3><p>یه پروژه واقعی رو اینجا جایگزین کن: اسکرین‌شات، لینک دمو و لینک گیت‌هاب.</p></div>
-        <div class="placeholder-note">⤷ جای پروژه واقعی توئه</div>
+        <div><div class="num ltr">SPECIMEN — 02</div><h3>عنوان پروژه</h3><p>توضیحات درباره پروژه</p></div>
+        <div class="placeholder-note">→ جای پروژه واقعی توئه</div>
       </div>
       <div class="specimen">
-        <div><div class="num ltr">SPECIMEN — 03</div><h3>کلون یه اپ معروف</h3><p>یه پروژه واقعی رو اینجا جایگزین کن: اسکرین‌شات، لینک دمو و لینک گیت‌هاب.</p></div>
-        <div class="placeholder-note">⤷ جای پروژه واقعی توئه</div>
+        <div><div class="num ltr">SPECIMEN — 03</div><h3>عنوان پروژه</h3><p>توضیحات درباره پروژه</p></div>
+        <div class="placeholder-note">→ جای پروژه واقعی توئه</div>
       </div>
     </div>
   </section>
@@ -157,7 +138,7 @@
     <form class="reveal" id="contactForm">
       <input type="text" name="name" id="inputName" placeholder="نام شما" required>
       <input type="email" name="email" id="inputEmail" placeholder="ایمیل شما" required>
-      <textarea name="message" id="inputMessage" rows="5" placeholder="درباره پروژه‌تبگو..." required></textarea>
+      <textarea name="message" id="inputMessage" rows="5" placeholder="پیام خود را بنویسید" required></textarea>
       <button type="submit" id="submitBtn">ارسال درخواست</button>
     </form>
   </section>
