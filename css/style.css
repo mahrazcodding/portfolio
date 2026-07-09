@@ -1,10 +1,10 @@
 :root {
-  --paper: #eef1f6;
+  --paper: rgb(238, 241, 246);
   --paper-line: rgba(20, 33, 61, 0.14);
   --ink: #14213d;
   --ink-soft: #4a5a7c;
   --ink-faint: #8b97ae;
-  --accent: #7b4fe0;
+  --accent: rgb(123, 79, 224);
   --panel: #ffffff;
   --mono: "IBM Plex Mono", monospace;
   --display: "Space Grotesk", sans-serif;
@@ -577,4 +577,15 @@ footer {
     border-right: none;
     padding: 0;
   }
+  .cw-body{
+ width: 800px;
+}
+}
+@media (max-width: 500px){
+  .v{
+  width: 30%;
+  }
+.cw-body{
+ width:300px;
+}
 }
